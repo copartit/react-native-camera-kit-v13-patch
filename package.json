@@ -21,7 +21,8 @@
     "start": "watchman watch-del-all && node node_modules/react-native/local-cli/cli.js start",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "bootstrap": "yarn example && yarn && yarn pods",
+    "prepare": "npm run build"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
